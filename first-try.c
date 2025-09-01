@@ -9,18 +9,18 @@ int fibonacci(int n) {
 
 int main() {
     int n, i;
-    
-    printf("欢迎使用斐波那契数列计算器！\n");
-    printf("请输入要计算的斐波那契数列项数: ");
+
+    printf("Welcome to use the Fibonacci sequence calculator！\n");
+    printf("Please enter the number of terms to calculate in the Fibonacci sequence: ");
     scanf("%d", &n);
     
     // 输入验证
     if (n < 0) {
-        printf("错误：请输入非负整数！\n");
+        printf("Error: Please enter a non-negative integer!\n");
         return 1;
     }
-    
-    printf("斐波那契数列前 %d 项为:\n", n);
+
+    printf("The first %d terms of the Fibonacci sequence are:\n", n);
     for (i = 0; i < n; i++) {
         printf("%d ", fibonacci(i));
     }
