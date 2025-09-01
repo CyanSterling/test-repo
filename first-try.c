@@ -25,6 +25,8 @@ int main() {
         printf("%d ", fibonacci(i));
     }
     printf("\n");
-    
+    getchar();
+    getchar();
+   
     return 0;
 }
